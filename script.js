@@ -1,3 +1,4 @@
+
 const links = document.querySelectorAll(".nav-links li");
 const pages = document.querySelectorAll(".page");
 
@@ -56,3 +57,21 @@ scale:0,
 duration:0.6,
 delay:0.6
 })
+// GSAP ANIMATIONS FOR SERVICE SECTION
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".service-card",{
+
+opacity:0,
+y:80,
+duration:1,
+stagger:0.25,
+ease:"power3.out",
+
+scrollTrigger:{
+trigger:".services",
+start:"top 80%",
+once:true
+}
+
+});
