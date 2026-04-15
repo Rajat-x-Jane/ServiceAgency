@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Service | TrustEdge Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-inner"><span>Demo tracking preview for booked client services.</span><a href="services.html">Explore Services</a></div></div>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">TrustEdge<span> Services</span></a><button class="menu-toggle" aria-label="Open menu">☰</button><nav class="site-nav"><a href="index.html">Home</a><a href="services.html">Services</a><a class="active" href="track.html">Track Service</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><a class="btn btn-primary" href="contact.html">Book Consultation</a></div></header>
+
+  <main class="section">
+    <div class="container">
+      <div class="page-hero">
+        <span class="badge">Tracking Preview</span>
+        <h1>Track Your Service Status</h1>
+        <p>This is a client-side demo showcasing how a status timeline can appear after booking a service.</p>
+      </div>
+
+      <section class="track-box">
+        <div class="track-input-row">
+          <input type="text" placeholder="Enter Service ID (e.g., TE-23914)" value="TE-23914" />
+          <button class="btn btn-primary" type="button">Track Status</button>
+        </div>
+
+        <div class="detail-meta-cards">
+          <article><h4>Current Status</h4><p>Under Review</p></article>
+          <article><h4>Assigned Professional</h4><p>CA Ritu Sharma</p></article>
+          <article><h4>Estimated Completion</h4><p>18 April 2026</p></article>
+        </div>
+
+        <ul class="timeline">
+          <li class="done"><h4>Request Received</h4><p>Service request created and reference ID generated.</p></li>
+          <li class="done"><h4>Documents Pending</h4><p>Initial checklist shared with client.</p></li>
+          <li class="done"><h4>Assigned to Professional</h4><p>Specialist assigned based on service type.</p></li>
+          <li class="done"><h4>In Progress</h4><p>Primary filing and validation in progress.</p></li>
+          <li class="active"><h4>Under Review</h4><p>Quality check and final compliance verification.</p></li>
+          <li><h4>Completed</h4><p>Service completion confirmation and records shared.</p></li>
+        </ul>
+
+        <p class="helper">Note: This is a frontend-only preview and does not fetch live backend status.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p class="copyright">© 2026 TrustEdge Services.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
